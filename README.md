@@ -82,20 +82,4 @@ Train the YOLOv8 object detection models as per the [Ultralytics YOLOv8 document
 
 Use OpenCV's `cv2.rectangle()` and `cv2.putText()` functions to draw bounding boxes and confidence scores on the images.
 
-## Report
 
-Include a report in PDF format that details your approaches, learning experiences, and evaluation metrics. 
-
-## Submission
-
-- **pascalVOC_to_yolo.py**: Script for converting annotations.
-- **weights/**: Directory containing the trained model weights.
-- **inference.py**: Script for performing inference.
-- **report.pdf**: Report detailing approaches, learning, and evaluation metrics.
-- **dataset.zip**: Sample whole image and cropped image.
-
-Ensure that all files are zipped together and submitted as per the instructions.
-
-## Final Notes
-
-Follow best practices for model training and scripting to achieve optimal trade-offs between speed and accuracy.
