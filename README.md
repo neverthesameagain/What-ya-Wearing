@@ -14,19 +14,12 @@ Additionally, a `classes.txt` file is provided for class mapping.
 
 ## Tasks
 
-1. Convert Pascal VOC annotations to YOLOv8 format.
-2. Train a YOLOv8 model for person detection.
-3. Train another YOLOv8 model for PPE detection using cropped images.
-4. Perform inference using both models and save the results.
-5. Report the approach, learning, and evaluation metrics.
+1. Converted Pascal VOC annotations to YOLOv8 format.
+2. Trained a YOLOv8 model for person detection.
+3. Trained another YOLOv8 model for PPE detection using cropped images.
+4. Performed inference using both models and save the results.
+5. Report includes the approach, learning, and evaluation metrics.
 
-## Important Instructions
-
-- Train a person detection model on the whole images.
-- For PPE detection, train another model on cropped images of detected persons.
-- Make suitable assumptions regarding class filtering and balancing for optimized solutions.
-- Ensure at least 5 classes are included in the PPE detection model, even if some classes are dropped due to inconsistent results.
-- Zip all the files and submit as instructed.
 
 ### Dataset Link
 
@@ -68,18 +61,18 @@ python inference.py --input_dir <input_directory_path> --output_dir <output_dire
 
 ## Model Training
 
-Train the YOLOv8 object detection models as per the [Ultralytics YOLOv8 documentation](https://docs.ultralytics.com/).
+Trained  the YOLOv8 object detection models as per the [Ultralytics YOLOv8 documentation](https://docs.ultralytics.com/).
 
 ### Person Detection Model
 
-- Train a model to detect persons in the images.
+- Trained a model to detect persons in the images.
 
 ### PPE Detection Model
 
-- Train a model to detect PPE items in cropped images of detected persons.
+- Trained a model to detect PPE and other health safety related appearels in cropped images of detected persons.
 
 ## Drawing Predicted Bounding Boxes
 
-Use OpenCV's `cv2.rectangle()` and `cv2.putText()` functions to draw bounding boxes and confidence scores on the images.
+Used OpenCV's `cv2.rectangle()` and `cv2.putText()` functions to draw bounding boxes and confidence scores on the images.
 
 
